@@ -167,6 +167,8 @@ img {
       rgba(47, 48, 58, 0.4)
     ),
     url(../images/Img_hero.jpg);
+    min-width: 1600px;
+    margin: 0 auto;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -332,7 +334,6 @@ img {
 .team-soc-link:hover,
 .team-soc-link:focus {
   background-color: var(--accent-color);
-  color: #ffffff;
 }
 
 .team-soc-link:hover .team-soc-icon,
@@ -357,27 +358,26 @@ img {
   gap: 30px;
 }
 
-.client-item {
+.client-soc {
   width: 170px;
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  /* background-color: #F5F5F5; */
+  background-color: #ffffff;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
 }
 
-.client-item:hover,
-.client-item:focus {
+.client-soc:hover,
+.client-soc:focus {
   border: 1px solid #2196f3;
-  border-radius: 4px;
   /* color: #AFB1B8 ; */
 }
 
-.client-item:hover .client-logo,
-.client-item:focus .client-logo {
+.client-soc:hover .client-logo,
+.client-soc:focus .client-logo {
   fill: #2196f3;
 }
 
@@ -465,11 +465,11 @@ img {
 
 .footer-logo-address {
   display: flex;
+  align-items: baseline;
 }
 
 .footer-soc {
-  padding-left: 70px;
-  /* padding-top: 72px; */
+margin-left: 70px;
 }
 
 /* _________________PORTFOLIO__________ */
@@ -545,7 +545,11 @@ img {
 
 .portfolio-projects-item {
   max-width: calc((100%-60px) / 3);
-  margin: 0;
+  margin: 0 auto;
+}
+
+.portfolio-projects-item:hover,
+.portfolio-projects-item:focus{
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
